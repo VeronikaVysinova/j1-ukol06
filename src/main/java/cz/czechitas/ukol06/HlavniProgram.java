@@ -4,6 +4,7 @@ package cz.czechitas.ukol06;
 import cz.czechitas.ukol06.svatky.SvatkySluzba;
 
 import java.io.IOException;
+import java.time.MonthDay;
 import java.util.List;
 
 /**
@@ -33,6 +34,11 @@ public class HlavniProgram {
             System.out.println("Dnes mají svátek:");
             svatkyDnes.forEach((svatek) -> System.out.printf("- %s", svatek).println());
         }
+
+        System.out.println(seznamSvatku.vyhledatSvatkyKeDni(MonthDay.of(01,04)));
+
+
     }
+
 
 }
