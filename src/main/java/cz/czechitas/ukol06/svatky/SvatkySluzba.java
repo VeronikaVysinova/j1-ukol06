@@ -20,7 +20,7 @@ public class SvatkySluzba {
     public SvatkySluzba() throws IOException {
         // TODO načíst seznam svátků ze souboru svatky.json
 
-        seznamSvatku = objectMapper.readValue(cestaKDatum.toFile(), SeznamSvatku.class);
+     seznamSvatku = objectMapper.readValue(cestaKDatum.toFile(), SeznamSvatku.class);
 
 
     }
