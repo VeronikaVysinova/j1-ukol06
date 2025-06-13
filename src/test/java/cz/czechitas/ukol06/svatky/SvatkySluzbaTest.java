@@ -24,7 +24,7 @@ class SvatkySluzbaTest {
         //TODO implementovat test metody vyhledatSvatkyKeDni
 SvatkySluzba svatkySluzba = new SvatkySluzba();
 assertEquals(List.of("Diana"),svatkySluzba.vyhledatSvatkyKeDni(MonthDay.of(01,04)));
-
+assertTrue(svatkySluzba.vyhledatSvatkyKeDni(MonthDay.of(01,01)).isEmpty(),"Pro zadany den, neni v souboru nalezen zadny svatek.");
     }
 
     @Test
