@@ -26,4 +26,10 @@ SvatkySluzba svatkySluzba = new SvatkySluzba();
 assertEquals(List.of("Diana"),svatkySluzba.vyhledatSvatkyKeDni(MonthDay.of(01,04)));
 
     }
+
+    @Test
+    void vyhledatSvatkyDnes () throws IOException {
+        SvatkySluzba svatkySluzba = new SvatkySluzba();
+        assertEquals(List.of("Antonín"), svatkySluzba.vyhledatSvatkyDnes());
+    }
 }
