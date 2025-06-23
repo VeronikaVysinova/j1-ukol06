@@ -19,29 +19,29 @@ import static org.junit.jupiter.api.Assertions.*;
 class SvatkySluzbaTest {
 
 
-
     @Test
     void vyhledatSvatkyKeDni() throws IOException {
         //TODO implementovat test metody vyhledatSvatkyKeDni
-SvatkySluzba svatkySluzba = new SvatkySluzba();
-assertEquals(List.of("Diana"),svatkySluzba
-        .vyhledatSvatkyKeDni(MonthDay.of(01,04)));
-assertTrue(svatkySluzba
-        .vyhledatSvatkyKeDni(MonthDay.of(01,01))
-        .isEmpty(),"Pro zadany den, neni v souboru nalezen zadny svatek.");
-assertTrue(svatkySluzba
-        .vyhledatSvatkyKeDni(MonthDay.of(01,01))
-        .isEmpty());
-assertEquals(Arrays.asList("Karina","Vasil"), svatkySluzba.vyhledatSvatkyKeDni(MonthDay.of(01,02)));
+        SvatkySluzba svatkySluzba = new SvatkySluzba();
+        assertEquals(List.of("Diana"), svatkySluzba
+                .vyhledatSvatkyKeDni(MonthDay.of(01, 04)));
+        assertTrue(svatkySluzba
+                .vyhledatSvatkyKeDni(MonthDay.of(01, 01))
+                .isEmpty(), "Pro zadany den, neni v souboru nalezen zadny svatek.");
+        assertTrue(svatkySluzba
+                .vyhledatSvatkyKeDni(MonthDay.of(01, 01))
+                .isEmpty());
+        assertEquals(Arrays.asList("Karina", "Vasil"), svatkySluzba.vyhledatSvatkyKeDni(MonthDay.of(01, 02)));
 
 
     }
 
     @Test
-    void vyhledatSvatkyDnes () throws IOException {
+    void vyhledatSvatkyDnes() throws IOException {
         SvatkySluzba svatkySluzba = new SvatkySluzba();
         assertEquals(List.of("Antonín"), svatkySluzba.vyhledatSvatkyDnes());
     }
+
     @Test
     void testConstructorSvatkySluzba() {
         assertDoesNotThrow(() -> {

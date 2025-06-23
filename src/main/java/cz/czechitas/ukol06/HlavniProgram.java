@@ -35,7 +35,7 @@ public class HlavniProgram {
             svatkyDnes.forEach((svatek) -> System.out.printf("- %s", svatek).println());
         }
 
-        System.out.println(seznamSvatku.vyhledatSvatkyKeDni(MonthDay.of(01,04)));
+        System.out.println(seznamSvatku.vyhledatSvatkyKeDni(MonthDay.of(01, 04)));
 
 
     }
